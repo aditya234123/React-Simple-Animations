@@ -10,6 +10,6 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
+    <App array={[1,2,3,4,5]}/>
   </Provider>
   , document.querySelector('.container'));
